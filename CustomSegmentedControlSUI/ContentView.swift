@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            CustomSegmentedPicker(titles: ["Explore", "StoriesOfSuccess"], selectedItemColor: .white, backgroundColor: .gray, selectedItemFontColor: .red, defaultItemFontColor: .gray)
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
-}
+}//ExploreView(), StoriesOfSuccessView()
